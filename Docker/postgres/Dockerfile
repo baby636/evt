@@ -1,4 +1,4 @@
-FROM postgres:11.5
+FROM postgres:11.11
 
 LABEL author="Harry <harrywong@live.com>" maintainer="Harry <harrywong@live.com>" version="1.3.0" \
   description="This is customized PostgreSQL image with pg_pathman support"
