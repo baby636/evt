@@ -32,7 +32,7 @@ RUN python3 /evt/scripts/symbol_ops.py export -s /tmp/build/symbols /tmp/build/b
 
 RUN python3 /evt/scripts/symbol_ops.py upload -f /tmp/build/symbols -k $awskey -s $awssecret -r evt-mainnet -b evt-symbols
 
-FROM debian:buster-slim
+FROM debian:10.10-slim
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive && apt-get install -y openssl libssl1.1 libllvm7 && rm -rf /var/lib/apt/lists/*
 
